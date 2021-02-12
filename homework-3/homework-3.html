@@ -1,0 +1,52 @@
+
+<!--1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.-->
+
+
+<script>
+        var n = 0;
+        while(n <= 100){
+        var check = true;
+            for (var i = 2; i < n; i++){
+                if (n % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) console.log(n);
+            n++;
+        }
+
+//2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
+//3. Товары в корзине хранятся в массиве. Задачи:
+//a) Организовать такой массив для хранения товаров в корзине;
+//b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+    
+    var goods = [
+        {
+            title: "Товар №1",
+            price: "100",
+            quantity: "1"
+        },
+        {
+            title: "Товар №2",
+            price: "200",
+            quantity: "2"
+        },
+        {
+            title: "Товар №3",
+            price: "300",
+            quantity: "3"
+        },
+    ];
+      
+       function countBasketPrice(goods){
+           var basket = 0;
+           for(var good of goods){
+               basket += (good.price * good.quantity)
+//               console.log(good.title + "стоит"+ good.price +"за"+good.quantity+"штуки");
+//            s+=good.price;
+           }
+            return basket
+        }
+    console.log("Стоимость корзины: " + countBasketPrice);
+    </script>
