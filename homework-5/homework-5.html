@@ -1,56 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-
-</head>
-<body>
-    <script>
-        
-    document.write('<table style = "border-style : solid">');
-        
-    for (var i = 1; i < 9; i++) {
-    document.write('<tr>');
-    if (i % 2 == 0){
-        for (var j = 1; j < 9; j++) {
-        if (j % 2 == 0 ) {
-        document.write('<td style = "width : 100px; height : 100px; background-color : white"></td>');
-        }
-            else {
-            document.write('<td style = "width : 100px; height : 100px; background-color : black"></td>');
-            };
-        };
-    }
-        else {
-        for (var j = 1; j < 9; j++) {
-        if (j % 2 == 0) {
-        document.write('<td style = "width : 100px; height : 100px; background-color : black"></td>');
-        }
-        else {
-        document.write('<td style = "width : 100px; height : 100px; background-color : white"></td>');
-        };
-        };
-        }
-        document.write('</tr>');
-        };
-
-
-        var str1 = ['L','K','S','F','Q','S','K','L'];
-        var str2 = ['P','P','P','P','P','P','P','P'];
-        var str3 = ['P','P','P','P','P','P','P','P'];
-        var str4 = ['L','K','S','F','Q','S','K','L'];
-        var str5 = ['1','2','3','4','5','6','7','8'];
-        
-        
-        var tr = document.createElement('tr');
-        
-        var td = document.createElement('td');
-        td.innerTEXT=str1 ;
-        
-        tr.appendChild(td);
-        
-    
-</script>
-</body>
+<link rel="stylesheet" href="chess.css">
+    <head>
+        <title>Шахмотная доска</title>
+        <script src="chess.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div id="board"></div>
+        </div>
+    </body>
 </html>
