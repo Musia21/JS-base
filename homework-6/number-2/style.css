@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+
+.item_title, .item_prices {
+    color: red;
+}
+h2 {
+    text-align: center;
+    color:blue;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+.prise {
+    width: 200px;
+    height: 30px;
+}
+
+.delited {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.add_price {
+    width: 100px;
+    height: 50px;
+}
+
+.add_price:hover,.prise:hover,.delited:hover,
+    background-color: pink;
+}
+.sum {
+    padding-top: 500px ;
+}
